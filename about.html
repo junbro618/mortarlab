@@ -7,27 +7,30 @@
     header{
       position: sticky;
       top: 0px;
+      margin : 20px;
+      z-index: 2;
+      filter: invert();
     }
     html{
       margin: 20px;
+      background-color: black;
     }
       .mortarhead{
         display: flex;
         flex-flow: row nowrap;
         background: white;
-        height: 8vh;
+        height: 6vh;
       }
       #logo{
         display: flex;
-        border: 2px solid purple;
       }
       #logo a {
         display: flex;
         width: auto;
       }
       .navhead{
+        border-bottom: solid 1px;
         flex-grow: 15;
-        border: 2px solid blue;
       }
       .navhead a {
         text-decoration: none;
@@ -35,33 +38,54 @@
       }
       .navhead ul{
         display: flex;
-        margin-top: 4vh;
+        flex-flow: row;
+        margin-top: 3vh;
       }
       .navhead li {
+        display: flex;
+        margin : 0 4vh;
         font-size: 18px;
         list-style-type: none;
-        margin: 0 4vh;
-        border: 1px solid green;
       }
       .main-article{
         display: flex;
         flex-flow: column wrap;
-        align-items: center;
         height: 200vh;
-        background: #87abe0;
-        border: 1px solid;
       }
       .main-on-going{
+        display: flex;
+        flex-flow: row nowrap;
         width: 90%;
-        height: 40%;
-        border: 1px solid red;
+        height: 50%;
         margin: 5%;
+      }
+      .mainimagecontainer{
+        flex: 1 1 0%;
+        margin-right: 4%;
+      }
+      .mainimagetextcontainer{
+        flex: 1 1 0%;
+        margin-left: 4%;
+        color: white;
+      }
+      .mainimage{
+        width: 100%;
+        height: auto;
+        object-fit: cover;
       }
       .main-about{
         text-align: center;
         border: 2px solid black;
         font-size: 32px;
-        margin-top: 10%;
+        margin: 10%;
+        margin-top : 20%;
+      }
+      .mainimagetextcontainer {
+        display: flex
+        flex-flow: column nowrap;
+      }
+      .mainimagetextcontainer p {
+        line-height: 200%;
       }
     </style>
   </head>
@@ -69,26 +93,25 @@
     <header>
       <div class="mortarhead">
         <div Id="logo">
-          <a href="index.html">
+          <a href="home.html">
             <img src="image/logo.jpg" alt="">
           </a>
         </div>
         <div class="navhead">
           <ul>
-            <li><a href="works.html">works</a></li>
-            <li><a href="about.html">about</a></li>
-            <li><a href="on-going.html">on-going</a></li>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="on-going.html">On Going</a></li>
           </ul>
         </div>
       </div>
     </header>
     <article class="main-article">
       <div class="main-on-going">
-        sfaddsfdsf
-      </div>
-      <div class="main-about">
-        MortarLab 설명설명설명
-        <br>설명설명설명
+        <div class="mainimagecontainer">
+        </div>
+        <div class="mainimagetextcontainer">
+        </div>
       </div>
     </article>
   </body>
