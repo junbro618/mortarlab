@@ -4,12 +4,15 @@
     <meta charset="utf-8">
     <title>mortarlab</title>
     <style media="screen">
+    html{
+      background-color: black;
+    }
     header{
       position: sticky;
       top: 0px;
-    }
-    html{
-      margin: 20px;
+      margin : 20px;
+      z-index: 2;
+      filter: invert();
     }
       .mortarhead{
         display: flex;
@@ -25,7 +28,7 @@
         width: auto;
       }
       .navhead{
-        border-bottom: solid 1px;
+        border-bottom: solid 2px;
         flex-grow: 15;
       }
       .navhead a {
@@ -47,26 +50,19 @@
         display: flex;
         flex-flow: column wrap;
         height: 200vh;
+        margin-left: 20px;
+        margin-right: 20px;
       }
       .main-on-going{
         display: flex;
-        flex-flow: row nowrap;
-        width: 90%;
+        width: 100%;
         height: 50%;
-        margin: 5%;
-      }
-      .mainimagecontainer{
-        flex: 1 1 0%;
-        margin-right: 4%;
-      }
-      .mainimagetextcontainer{
-        flex: 1 1 0%;
-        margin-left: 4%;
       }
       .mainimage{
         width: 100%;
         height: auto;
         object-fit: cover;
+        z-index: 1;
       }
       .main-about{
         text-align: center;
@@ -96,39 +92,7 @@
     </header>
     <article class="main-article">
       <div class="main-on-going">
-        <div class="mainimagecontainer">
-          <img class="mainimage" src="image/ongoing_image2.jpg" alt="">
-        </div>
-        <div class="mainimagetextcontainer">
-          <h1>비어있는 시간을 보내는 공간 :<br>당신이 머무르는 동안</h1>
-          <br>
-          <p>공집과 모르타르랩이 기획한 이번 전시는 버려진 빈집이었던 공간에서
-          진행된다. 여러 좁은 골목을 지나야 만날 수 있는, 사람들의 발길이 끊어진
-          이 빈집은 누군가의 머무름이 사라진 지 오래다.이처럼 그저 텅 비어 있던 공간에
-          관객을 멈춰 세우며 잠시나마 머무르게 하는 것이 가능할까.
-          이전에 잠시 몸담았던 아주 작은 공간에서의 추억은 그 장소가 다른 누군가에
-          의해 소유권이 사라졌음에도 어딘가에 각자의 기억으로 남아 있다.
-          오랫동안 한 장소에 머무를 새 없이 월세방을 전전할 수밖에 없는 사회에서
-          이 기억은 끊임없이 재생산되며 어딘가에 뿌리내리지 못하고 떠돈다.
-          어렸을 적 놀이터의 구석에 만들어뒀던 아지트의 기억, 처음 자신의 방이 생겼을 때 방의
-          이곳저곳을 마음대로 꾸몄던 추억은 현재도 떠돌고 있는 수많은 청년의 기억 속에 있다. 각자의 기억 속에 담겨 있는 어떤 공간에
-          대한 회고는 ‘머무름’이라는 그들의 열망과 함께 한 빈집에서 발현된다.
-          이번 전시에 참여하는 작가들은 각자 방 한 칸의 공간을 제공받는다. 공간을 제공받은 작가들은 그들만의 방법으로 머무름에
-          관한 기억을 회고하는 세계를 구상하여 관객을 빈집의 한구석으로 이끈다. 관객은 그곳에서 각자의 경험을 공유하고 작품과 함께
-          잠시나마 머무는 것을 상상한다. 관객과 시공간을 함께 공유하는 머무름을 통해 빈집에 다시금 숨을 불어넣는다.</p>
-          <br>
-          <h3>일정</h3>
-          <p> 2022. 03. 19 ~ 2022. 04. 17</p>
-          <br>
-          <h3>위치</h3>
-          <p> [공]집 : 서울 특별시 성북구 솔샘로 6다길 7-5</p>
-          <br>
-          <h3>운영시간</h3>
-          <p>11시 - 20시 <br> 매주 월요일 휴관</p>
-          <br>
-          <h3>참여작가</h3>
-          <p>김민영 &emsp; 우엉 &emsp; 윤석찬 &emsp; 임정은 &emsp; 조준형 &emsp; 허보경</p>
-        </div>
+          <img class="mainimage" src="image/ongoing_image.jpg" alt="">
       </div>
       <div class="main-about">
         MortarLab 설명설명설명
