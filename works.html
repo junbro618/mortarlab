@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <title>mortarlab</title>
     <style media="screen">
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
     header{
       position: sticky;
       top: 0px;
@@ -14,6 +15,7 @@
     html{
       margin: 20px;
       background-color: black;
+      font-family: 'Noto Sans KR', sans-serif;
     }
       .mortarhead{
         display: flex;
@@ -49,7 +51,7 @@
       }
       .main-article{
         display: flex;
-        flex-flow: column wrap;
+        flex-flow: row wrap;
         height: 200vh;
       }
       .main-on-going{
@@ -58,6 +60,7 @@
         width: 90%;
         height: 50%;
         margin: 5%;
+        margin-top: 10%;
       }
       .mainimagecontainer{
         flex: 1 1 0%;
@@ -73,16 +76,11 @@
         height: auto;
         object-fit: cover;
       }
-      .main-about{
-        text-align: center;
-        border: 2px solid black;
-        font-size: 32px;
-        margin: 10%;
-        margin-top : 20%;
-      }
       .mainimagetextcontainer {
         display: flex
-        flex-flow: column nowrap;
+        height: 100%;
+        flex-flow: row wrap;
+        overflow: hidden;
       }
       .mainimagetextcontainer p {
         line-height: 200%;
@@ -128,18 +126,34 @@
           이번 전시에 참여하는 작가들은 각자 방 한 칸의 공간을 제공받는다. 공간을 제공받은 작가들은 그들만의 방법으로 머무름에
           관한 기억을 회고하는 세계를 구상하여 관객을 빈집의 한구석으로 이끈다. 관객은 그곳에서 각자의 경험을 공유하고 작품과 함께
           잠시나마 머무는 것을 상상한다. 관객과 시공간을 함께 공유하는 머무름을 통해 빈집에 다시금 숨을 불어넣는다.</p>
-          <br>
           <h3>일정</h3>
           <p> 2022. 03. 19 ~ 2022. 04. 17</p>
-          <br>
           <h3>위치</h3>
           <p> [공]집 : 서울 특별시 성북구 솔샘로 6다길 7-5</p>
-          <br>
           <h3>운영시간</h3>
           <p>11시 - 20시 <br> 매주 월요일 휴관</p>
-          <br>
           <h3>참여작가</h3>
           <p>김민영 &emsp; 우엉 &emsp; 윤석찬 &emsp; 임정은 &emsp; 조준형 &emsp; 허보경</p>
+        </div>
+      </div>
+      <div class="main-on-going">
+        <div class="mainimagecontainer">
+          <video class="mainimage" src="video/2021_poster.mp4" type="video/mp4" autoplay mute>
+          </video>
+        </div>
+        <div class="mainimagetextcontainer">
+          <h1>접합하다</h1>
+          <p>안산문화재단의 지원을 받은 모르타르랩의 올해 전시 <접합하다>는 모르타르의 본질적 특성인 “접합”에서 출발하여 작가들 스스로 세상에
+            접합하기 위한 이야기를 펼쳐나간다. 코로나19가 장기화되며 사람 간 거리두기와 언택트가 익숙한 광경이 되었지만, 작가들이 상상하는
+            다양한 의미의 접합은 물리적 만남을 뛰어넘는 새로운 실험을 하며 만남에 관한 다채로운 가능성을 열어준다.불어넣는다.</p>
+          <h3>일정</h3>
+          <p> 2021. 09. 24 ~ 2021. 10. 05</p>
+          <h3>위치</h3>
+          <p> 안산문화예술의전당 : 경기 안산시 단원구 화랑로 312</p>
+          <h3>운영시간</h3>
+          <p>9시 - 18시</p>
+          <h3>참여작가</h3>
+          <p>윤석찬 &emsp; 임정은 &emsp; 조준형</p>
         </div>
       </div>
     </article>
