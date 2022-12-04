@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>mortarlab</title>
+    <style media="screen">
+    html{
+      background-color: black;
+    }
+    header{
+      position: sticky;
+      top: 0px;
+      margin : 20px;
+      z-index: 2;
+      filter: invert();
+    }
+      .mortarhead{
+        display: flex;
+        flex-flow: row nowrap;
+        background: white;
+        height: 6vh;
+      }
+      #logo{
+        display: flex;
+      }
+      #logo a {
+        display: flex;
+        width: auto;
+      }
+      .navhead{
+        border-bottom: solid 2px;
+        flex-grow: 15;
+      }
+      .navhead a {
+        text-decoration: none;
+        color : black;
+      }
+      .navhead ul{
+        display: flex;
+        flex-flow: row;
+        margin-top: 3vh;
+      }
+      .navhead li {
+        display: flex;
+        margin : 0 4vh;
+        font-size: 18px;
+        list-style-type: none;
+      }
+      .main-article{
+        display: flex;
+        flex-flow: column wrap;
+        height: 200vh;
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      .main-on-going{
+        display: flex;
+        width: 100%;
+        height: 50%;
+      }
+      .mainimagecontainer{
+        width: 100%;
+        height: auto;
+      }
+      .mainimage{
+        width: 100%;
+        height: 90%;
+        object-fit: cover;
+        z-index: 1;
+      }
+      .ongoingtxt{
+        display: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-color: white;
+      }
+      .mainimage:hover {
+        opacity: 50%;
+      }
+      .mainimage:hover +.ongoingtxt{
+        display:block;
+        opacity: 50%;
+      }
+      .ongoingtxt:hover{
+        display:block;
+        z-index: 3;
+      }
+      .main-about{
+        text-align: center;
+        border: 2px solid black;
+        font-size: 32px;
+        margin: 10%;
+        margin-top : 20%;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="mortarhead">
+        <div Id="logo">
+          <a href="index.html">
+            <img src="image/logo.jpg" alt="">
+          </a>
+        </div>
+        <div class="navhead">
+          <ul>
+            <li><a href="works.html">Works</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="on-going.html">On Going</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <article class="main-article">
+      <div class="main-on-going">
+        <a href="on-going.html" class="mainimagecontainer">
+          <img class="mainimage" src="image/ongoing_image3.jpg">
+          <div class="ongoingtxt">
+            안녕하새요 온고잉프로젝트로 갈게용오옹
+          </div>
+        </a>
+      </div>
+      <div class="main-about">
+        MortarLab 설명설명설명
+        <br>설명설명설명
+      </div>
+    </article>
+  </body>
+</html>
